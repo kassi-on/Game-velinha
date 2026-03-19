@@ -21,5 +21,24 @@ int main(){
     printf("----|----|----\n");
     printf(" %c | %c |  %c\n\n", p7, p8, p9);
 
+int valida = 0;
+if(escolha == 1 && p1 == '1') { p1 = jogador; valida =1;}
+else if (escolha == 2 && p2 == '2') { p2 = jogador; valida 1;}
+else{
+    printf("\nPosicao invalida ou ocupada!Aperte Enter.");
+    getchar(); getchar();
+    continue;
+}
+if (p1 == p2 && p2 == p3) ganhou = 1;
+if (p1 == p4 && p4 == p7) ganhou = 1;
+if (p1 == p5 && p5 == p9) ganhou = 1;
 
+if (ganhou ==0){
+    if (jogador == 'X'){
+        jogador = 'O';
+    }
+}else{
+    jogador = 'X';
+}
+jogadas++;
 }
