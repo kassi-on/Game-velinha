@@ -9,10 +9,17 @@ int main(){
     int ganhou = 0;
     int escolha;
 
+    while (jogadas <9 && ganhou ==0){
+        system("cls");
+    }
+
     //desenho do tabuleiro
     printf("\n JOGO DA VELHA \n\n");
     printf ("%c | %c | %c \n",  p1, p2, p3);
     printf("----|----|----\n");
-    printf(" %c  | %c | %c \n", p4, p5, p6");
+    printf(" %c | %c | %c \n", p4, p5, p6);
+    printf("----|----|----\n");
+    printf(" %c | %c |  %c\n\n", p7, p8, p9);
+
 
 }
